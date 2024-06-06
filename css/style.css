@@ -12,6 +12,8 @@ body {
     justify-content: space-between; /* Căn hai đầu */
     align-items: center; /* Căn giữa theo trục dọc */
     width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 #search-input {
@@ -23,7 +25,7 @@ body {
 
 .nav-menu {
     display: flex;
-    justify-content: center; /* Căn giữa theo trục ngang */
+    justify-content: center center;
     margin: 0; /* Loại bỏ margin mặc định */
     padding: 0; /* Loại bỏ padding mặc định */
 }
@@ -71,35 +73,13 @@ body {
     background-color: #f0f0f0;
 }
 
-footer {
-    background-color: #333; /* Màu nền */
-    color: #fff; /* Màu chữ */
-    padding: 5px; /* Khoảng cách padding */
-    text-align: center; /* Căn giữa nội dung */
-    position: fixed; /* Fixed để giữ footer ở dưới cùng */
-    bottom: 0; /* Đặt ở dưới cùng */
-    width: 100%; /* Độ rộng bằng 100% */
-    height: 60px;
-}
-
-footer div {
-    display: inline-block; /* Hiển thị các div chứa liên kết ngang nhau */
-    margin-right: 40px; /* Khoảng cách giữa các div */
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-}
-
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .slide-show{
@@ -179,7 +159,9 @@ section{
 }
 
 .recipe-item {
-    border: 1px solid #ddd;
+    border: 1px solid #2c2c2c;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .recipe-item img {
@@ -200,3 +182,103 @@ section{
     font-size: 14px;
 }
 
+.food{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+.sidebar {
+    width: 1200px;
+    height: 100%;
+}
+
+.hot-recipe-list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.food-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Đặt hướng flex container thành dọc */
+    align-items: center; /* Căn giữa theo trục dọc */
+}
+
+.food-title{
+    text-align: center;
+}
+
+.food-content > *:not(img) {
+    align-self: flex-start; /* Căn lề trái cho các phần tử khác */
+}
+
+@media screen and (max-width: 1000px) {
+    .food {
+        flex-direction: column; /* Đặt lại hướng của flex container thành dọc */
+        margin-left: 0; /* Xóa margin trái */
+        margin-right: 0; /* Xóa margin phải */
+    }
+
+    .sidebar {
+        display: none; /* Ẩn sidebar khi kích thước màn hình nhỏ hơn hoặc bằng 1000px */
+    }
+
+    .food-content {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+    }
+}
+
+.divider {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+    margin: 50px 0;
+}
+
+.divider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px 10px; /* Thêm padding cho dòng text */
+    white-space: nowrap; /* Ngăn chặn text xuống dòng khi quá dài */
+}
+
+.food-content h3,h4,h5{
+    font-weight: bold;
+    color: #a98a53;
+}
+
+.food-content img{
+    margin: 0 auto;
+    align-items: center;
+}
+
+footer {
+    background-color: #333; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 5px; /* Khoảng cách padding */
+    text-align: center; /* Căn giữa nội dung */
+    bottom: 0; /* Đặt ở dưới cùng */
+    width: 100%; /* Độ rộng bằng 100% */
+    height: 60px;
+}
+
+footer div {
+    display: inline-block; /* Hiển thị các div chứa liên kết ngang nhau */
+    margin-right: 40px; /* Khoảng cách giữa các div */
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
