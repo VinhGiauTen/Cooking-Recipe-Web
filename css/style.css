@@ -173,14 +173,19 @@ body {
     margin-bottom: 5px;
 }
 
+.recipe-item a{
+    text-decoration: none;
+    color: black;
+}
+
 .recipe-item img {
     width: 100%;
     height: auto;
 }
 
-/* .recipe-details {
-    padding: 20px;
-} */
+.recipe-details {
+    padding-left: 10px;
+}
 
 .recipe-details h3 {
     margin-bottom: 10px;

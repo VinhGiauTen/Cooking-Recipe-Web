@@ -104,7 +104,7 @@
           <div class="btn-right btn-slide"><i class="fa-solid fa-angle-right"></i></div>
         </div>
       </div> -->
-      <div id="carouselExample" class="carousel slide">
+      <div id="carouselExample" class="carousel slide carousel-fade mt-2" >
         <div class="carousel-inner">
           <div class="carousel-item active" style="display: flex;">
             <a href="#" class="image">
@@ -137,11 +137,11 @@
             </a>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="justify-content: left;">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="justify-content: right;">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -152,7 +152,7 @@
         <div class="content">
           <h3>Bài đăng mới nhất</h3>
           <div class="recipe-list">
-            <div class="recipe-item">
+            <div class="recipe-item" data-category="Món chính">
                 <img src="images/ca-dieu-hong-chien-sa-ot.jpg" alt="">
                 <div class="recipe-details">
                     <p style="font-size: 20px; font-weight: bold;">Cá chiên sả ớt</p>
@@ -160,7 +160,7 @@
                     <p>Mô tả: Mô tả về món ăn...</p>
                 </div>
             </div>
-            <div class="recipe-item">
+            <div class="recipe-item" data-category="Món chính">
               <a href="recipe.html">
                 <img src="images/ga-rang-muoi.webp" alt="">
                 <div class="recipe-details">
@@ -170,38 +170,38 @@
                 </div>
               </a>
             </div>
-            <div class="recipe-item">
-              <img src="images/ga-rang-muoi.webp" alt="">
+            <div class="recipe-item" data-category="Món chính">
+              <img src="images/cach-lam-oc-huong-xao-bo-toi.webp" alt="">
               <div class="recipe-details">
-                  <p style="font-size: 20px; font-weight: bold;">Gà rang muối</p>
+                  <p style="font-size: 20px; font-weight: bold;">Ốc xào bơ tỏi</p>
                   <p>Người đăng: Admin | 01/01/2024</p>
                   <p>Mô tả: Mô tả về món ăn...</p>
               </div>
             </div>
           </div>
           <div class="recipe-list">
-            <div class="recipe-item">
-                <img src="images/ca-dieu-hong-chien-sa-ot.jpg" alt="">
+            <div class="recipe-item" data-category="Bánh ngọt">
+                <img src="images/banh-pateseo.webp" alt="">
                 <div class="recipe-details">
-                    <p style="font-size: 20px; font-weight: bold;">Cá chiên sả ớt</p>
+                    <p style="font-size: 20px; font-weight: bold;">Bánh Pateseo</p>
                     <p>Người đăng: Admin | 01/01/2024</p>
                     <p>Mô tả: Mô tả về món ăn...</p>
                 </div>
             </div>
-            <div class="recipe-item">
+            <div class="recipe-item" data-category="Bánh ngọt">
               <a href="recipe.html">
-                <img src="images/ga-rang-muoi.webp" alt="">
+                <img src="images/banh-bong-lan-trung-muoi.webp" alt="">
                 <div class="recipe-details">
-                    <p style="font-size: 20px; font-weight: bold;">Gà rang muối</p>
+                    <p style="font-size: 20px; font-weight: bold;">Bánh bông lan trứng muối</p>
                     <p>Người đăng: Admin | 01/01/2024</p>
                     <p>Mô tả: Mô tả về món ăn...</p>
                 </div>
               </a>
             </div>
-            <div class="recipe-item">
-              <img src="images/ga-rang-muoi.webp" alt="">
+            <div class="recipe-item" data-category="Bánh ngọt">
+              <img src="images/cach-lam-banh-ran-doremon-1.webp" alt="">
               <div class="recipe-details">
-                  <p style="font-size: 20px; font-weight: bold;">Gà rang muối</p>
+                  <p style="font-size: 20px; font-weight: bold;">Bánh rán Doraemon</p>
                   <p>Người đăng: Admin | 01/01/2024</p>
                   <p>Mô tả: Mô tả về món ăn...</p>
               </div>
@@ -303,6 +303,7 @@
 
 
     <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-Nlh1U/OuVO0FhOCBfi2AGidajJ/mFE16rCEIjxeey1ZZ8PVspCdpQgYBKwSGml5EXuDCPk8DTGA5ldCgRqnVfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
