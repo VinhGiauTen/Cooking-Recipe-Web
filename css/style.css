@@ -24,11 +24,11 @@ body {
     align-items: center; /* Căn giữa nội dung của ô tìm kiếm */
 }
 
-.nav-menu {
+/* .nav-menu {
     display: flex;
     justify-content: center center;
-    margin: 0; /* Loại bỏ margin mặc định */
-    padding: 0; /* Loại bỏ padding mặc định */
+    margin: 0;
+    padding: 0; 
 }
 
 .nav-menu ul {
@@ -72,7 +72,7 @@ body {
 
 .nav-menu ul li ul li:hover {
     background-color: #f0f0f0;
-}
+} */
 
 
 .home_content{
@@ -247,10 +247,6 @@ body {
     text-align: center;
 }
 
-.food-content > *:not(img) {
-    align-self: flex-start; /* Căn lề trái cho các phần tử khác */
-}
-
 @media screen and (max-width: 1000px) {
     .food {
         flex-direction: column; /* Đặt lại hướng của flex container thành dọc */
@@ -287,7 +283,7 @@ body {
     white-space: nowrap; /* Ngăn chặn text xuống dòng khi quá dài */
 }
 
-.food-content h3,h4,h5{
+.food-content h3, .food-content h4, .food-content h5{
     font-weight: bold;
     color: #a98a53;
 }
@@ -295,6 +291,39 @@ body {
 .food-content img{
     margin: 0 auto;
     align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.nav-button {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.nav-button:hover {
+    background-color: #e0e0e0;
+}
+
+.previous {
+    margin-right: auto;
+    text-align: left;
+}
+
+.next {
+    margin-left: auto;
+    text-align: right;
 }
 
 footer {
@@ -317,4 +346,23 @@ footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 20px;
+}
+
+#backToTop {
+    display: none; /* Ẩn nút mặc định */
+    position: fixed; /* Cố định vị trí nút */
+    bottom: 20px; /* Vị trí từ dưới lên */
+    right: 20px; /* Vị trí từ bên phải */
+    width: 40px;
+    z-index: 99; /* Đảm bảo nút nằm trên các thành phần khác */
+    border: none; /* Không viền */
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+    padding: 8px; /* Đệm trong nút */
+    border-radius: 25px;
+}
+
+#backToTop:hover {
+    background-color: #555; /* Màu nền khi di chuột qua nút */
 }

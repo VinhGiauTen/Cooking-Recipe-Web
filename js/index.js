@@ -96,3 +96,23 @@ document.querySelectorAll('.dropdown-item').forEach(function (filter) {
         });
     });
 });
+
+// Lấy nút
+let backToTopButton = document.getElementById("backToTop");
+
+// Khi người dùng cuộn xuống 20px từ đầu tài liệu, hiển thị nút
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+}
+
+// Khi người dùng nhấp vào nút, cuộn lên đầu trang
+backToTopButton.onclick = function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
