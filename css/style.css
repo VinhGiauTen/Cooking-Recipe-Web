@@ -68,6 +68,12 @@ body {
     padding: 5px 5px 5px 20px;
 }
 
+.note{
+    font-size: 8px;
+    color: #689f38;
+    text-align: center;
+}
+
 .recipe-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
